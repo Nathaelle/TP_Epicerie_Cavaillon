@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Produits à la une{% endblock %}
+
+{% block body %}
+
+{# Ceci est un commentaire Twig #}
+
+<div class="row mt-4">
+<div class="col-md-10 m-auto row">
+    {% for categorie in categories %}
+    <div class="card col-md-6 col-lg-4">
+        <img src="https://place-hold.it/500x300" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h2 class="card-title h5">{{ categorie }}</h2>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Voir tous les articles</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+    
+</div>
+{% endblock %}
