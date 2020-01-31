@@ -4,7 +4,7 @@ En préambule, je vous rappelle que vous pouvez consulter sans restriction aucun
 
 ## Enoncé initial
 
-L'entreprise FromLocal désire vendre ses produits sur internet, et faire découvrir la richesse de notre Provence... au reste du monde. Il y aura plusieurs catégories de produits : Miel, Huiles d'olives, etc... Ainsi qu'un forum de partage autour des produits (recettes, etc...). Un client aura un espace personnel, et pourra ajouter des produits dans son e-panier... produits restitués lors de la génération du son bon de commande.
+L'entreprise FromLocal désire vendre ses produits sur internet, et faire découvrir la richesse de notre Provence... au reste du monde. Il y aura plusieurs catégories de produits : Miel, Huiles d'olives, etc... Ainsi qu'un forum de partage autour des produits (recettes, etc...). Un client aura un espace personnel, et pourra ajouter des produits dans son e-panier... produits restitués lors de la génération de son bon de commande.
 
 ## Symfony : INSTALLATION (une seule fois)
 
@@ -39,3 +39,13 @@ Pour installer Symfony (v5) vous devez :
 3. Lancez le serveur
 `symfony serve`
 Et ne fermez pas le terminal !!
+
+## Symfony : Récupérer un projet sur GitHub
+
+1. Copiez l'adresse de repository : `https://github.com/Nathaelle/TP_Epicerie_Cavaillon.git`
+2. Ouvrez un terminal dans répertoire www et taper la commande : `git clone https://github.com/Nathaelle/TP_Epicerie_Cavaillon.git`
+3. Ouvrir le projet dans VSC puis entrez la commande : `composer install`
+4. Lancez le serveur `symfony serve`
+4. Lancez la commande : `php bin/console doctrine:database:create`
+5. Executez les migrations : `php bin/console doctrine:migration:migrate`
+5. Executez les fixtures : `php bin/console doctrine:fixtures:load`
