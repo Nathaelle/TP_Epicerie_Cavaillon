@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur nos forums!{% endblock %}
+
+{% block body %}
+
+<ul class="list-group">
+    {% for forum in forums %}
+    <li class="list-group-item">{{ forum }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

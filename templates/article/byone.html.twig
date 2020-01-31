@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Produits à la une{% endblock %}
+
+{% block body %}
+
+{# Ceci est un commentaire Twig #}
+
+<div class="row mt-4">
+<div class="col-md-10 m-auto row">
+    <h2 class="col-sm-12">{{ article.nom }}</h2>
+    <div class="card col-sm-12 row">
+        <p class="col-md-6"><img src="https://place-hold.it/500x300" class="card-img-top" alt="..."></p>
+        <div class="card-body col-md-6">
+            <h2 class="card-title h5">{{ article.description }}</h2>
+            <p class="card-text">Disponibilité : {{ article.quantite }} articles en stock</p>
+            <p class="card-text">Prix {{ article.prix }} €</p>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+</div>
+{% endblock %}

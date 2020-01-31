@@ -8,13 +8,14 @@
 
 <div class="row mt-4">
 <div class="col-md-10 m-auto row">
-    {% for categorie in categories %}
-    <div class="card col-md-6 col-lg-4">
+    <h2>{{ categorie.nom }}</h2>
+    {% for article in articles %}
+    <div class="card col-md-6 col-lg-2">
         <img src="https://place-hold.it/500x300" class="card-img-top" alt="...">
         <div class="card-body">
-            <h2 class="card-title h5">{{ categorie.nom }}</h2>
-            <p class="card-text">{{ categorie.description }}</p>
-            <a href="#" class="btn btn-primary">Voir tous les articles</a>
+            <h2 class="card-title h5">{{ article.nom }}</h2>
+            <p class="card-text">{{ article.description }}</p>
+            <a href="{{ path('article', {'id': article.id})}}" class="btn btn-primary">Voir les détails</a>
         </div>
     </div>
     {% endfor %}
